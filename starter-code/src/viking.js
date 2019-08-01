@@ -25,10 +25,13 @@ class Viking extends Soldier {
   }
   receiveDamage(damage){
     this.health -= damage;
-    return "";
+    /*if(health > 0){
+      return this.name + ` has received ${damage} points of damage`;
+    } else {
+      return this.name + " has died in act of combat";
+    }*/
   }
 }
-
 
 // Saxon
 class Saxon extends Soldier{
